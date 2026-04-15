@@ -1,0 +1,36 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    border: dotted;
+}
+.cards{
+    display: grid;
+    grid-template-areas:
+    " . card-team-builder ."
+    "card-Supervisor . card-calculator"
+    ". card-karma ."
+    ;
+
+    border: dotted;
+}
+.card-team-builder{
+    border: dotted;
+}
+.card-Supervisor{
+    border: dotted;
+}
+.card-calculator{
+    border: dotted;
+}
+.card-karma{
+    border: dotted;
+}
+
+
+
