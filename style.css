@@ -8,13 +8,11 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    border: dotted;
 }
 main{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    border: dotted;
     text-align: center;
     text-justify: center;
 
@@ -26,24 +24,41 @@ main{
     "cards-supervisor . card-calculator"
     ". card-karma ."
     ;
-
-    border: dotted;
 }
 .card-team-builder{
     grid-area:card-team-builder;
-    border: dotted;
+    border-top: solid;
+    background-color:  hsl(0, 0%, 100%);
+    border-top-color: hsl(0, 78%, 62%);
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 .cards-supervisor{
     grid-area:cards-supervisor;
-    border: dotted;
+    border-top: solid;
+    background-color:  hsl(0, 0%, 100%);
+    border-top-color: hsl(180, 62%, 55%);
+    display: flex;
+    flex-direction: column;
 }
 .card-calculator{
     grid-area: card-calculator;
-    border: dotted;
+    border-top: solid;
+    background-color:  hsl(0, 0%, 100%);
+    border-top-color: hsl(212, 86%, 64%);
+    display: flex;
+    flex-direction: column;
 }
 .card-karma{
     grid-area: card-karma;
-    border: dotted;
+    border-top: solid;
+    background-color:  hsl(0, 0%, 100%);
+    border-top-color: hsl(34, 97%, 64%);
+    display: flex;
+    flex-direction: column;
+    
 }
 .attribution{
     display: flex;
@@ -53,5 +68,12 @@ main{
     margin-top: 60px;
 
 }
+.img-team-builder,.img-karma,.img-calculator,.img-supervisor{
+    align-self: self-end;
+    justify-self: end;
+    height: 60px;
+    width: 60px;
+}
+
 
 
