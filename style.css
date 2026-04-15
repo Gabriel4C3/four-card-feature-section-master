@@ -7,28 +7,40 @@
 body{
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
     border: dotted;
+}
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border: dotted;
+
 }
 .cards{
     display: grid;
     grid-template-areas:
     " . card-team-builder ."
-    "card-Supervisor . card-calculator"
+    "cards-supervisor . card-calculator"
     ". card-karma ."
     ;
 
     border: dotted;
 }
 .card-team-builder{
+    grid-area:card-team-builder;
     border: dotted;
 }
-.card-Supervisor{
+.cards-supervisor{
+    grid-area:cards-supervisor;
     border: dotted;
 }
 .card-calculator{
+    grid-area: card-calculator;
     border: dotted;
 }
 .card-karma{
+    grid-area: card-karma;
     border: dotted;
 }
 
