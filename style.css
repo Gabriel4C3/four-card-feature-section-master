@@ -61,7 +61,7 @@ main{
 
 .card-supervisor{
     grid-area:card-supervisor;
-    border-top: solid 10px;
+    border-top: solid 5px;
     background-color:  hsl(0, 0%, 100%);
     border-top-color: hsl(180, 62%, 55%);
     display: flex;
@@ -77,7 +77,7 @@ main{
 }
 .card-calculator{
     grid-area: card-calculator;
-    border-top: solid 10px;
+    border-top: solid 5px;
     background-color:  hsl(0, 0%, 100%);
     border-top-color: hsl(212, 86%, 64%);
     display: flex;
@@ -93,7 +93,7 @@ main{
 }
 .card-karma{
     grid-area: card-karma;
-    border-top: solid 10px;
+    border-top: solid 5px;
     background-color:  hsl(0, 0%, 100%);
     border-top-color: hsl(34, 97%, 64%);
     display: flex;
