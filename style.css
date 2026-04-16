@@ -43,7 +43,7 @@ main{
 }
 .card-team-builder{
     grid-area:card-team-builder;
-    border-top:solid 10px;
+    border-top:solid 5px;
     background-color:  hsl(0, 0%, 100%);
     border-top-color:    hsl(0, 78%, 62%);
     display: flex;
