@@ -151,12 +151,13 @@ h2{
     flex-flow: row nowrap;
     justify-items: center;
     align-items: center;
+   
    font-family: poppins;
    color: hsl(212, 6%, 44%);
 
 }
 a{
-    text-align: justify;
+   
     text-decoration: none;
     color: hsl(234, 12%, 34%);
 }
