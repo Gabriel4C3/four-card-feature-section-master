@@ -1,4 +1,10 @@
 @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+@font-face {
+    font-family:poppins ;
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +14,10 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: rgb(250, 250, 250);
+    font-family: popins;
 }
 main{
     display: flex;
@@ -15,53 +25,86 @@ main{
     justify-content: center;
     text-align: center;
     text-justify: center;
+    background-color: rgb(250, 250, 250);   
 
 }
 .cards{
+    background-color: rgb(250, 250, 250);
     display: grid;
     grid-template-areas:
     " . card-team-builder ."
-    "cards-supervisor . card-calculator"
-    ". card-karma ."
+    "card-supervisor card-team-builder card-calculator"
+    "card-supervisor card-karma card-calculator"
     ;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    
 }
 .card-team-builder{
     grid-area:card-team-builder;
-    border-top: solid 10px;
+    border-top:solid 10px;
     background-color:  hsl(0, 0%, 100%);
-    border-top-color: hsl(0, 78%, 62%);
+    border-top-color:    hsl(0, 78%, 62%);
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 200px;
+    border-radius: 4px;
+    text-align: justify;
+    padding: 10px;
+    width: 350px;
+    height: 240px;
     box-shadow: 3px 3px 3px 3px hsla(210, 6%, 44%, 0.306);
     
     
     
 }
-.cards-supervisor{
-    grid-area:cards-supervisor;
-    border-top: solid;
+
+.card-supervisor{
+    grid-area:card-supervisor;
+    border-top: solid 10px;
     background-color:  hsl(0, 0%, 100%);
     border-top-color: hsl(180, 62%, 55%);
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
+    text-align: justify;
+    padding: 10px;
+    width: 350px;
+    height: 240px;
+    box-shadow: 3px 3px 3px 3px hsla(210, 6%, 44%, 0.306);
+    margin-right: 10px;
+
 }
 .card-calculator{
     grid-area: card-calculator;
-    border-top: solid;
+    border-top: solid 10px;
     background-color:  hsl(0, 0%, 100%);
     border-top-color: hsl(212, 86%, 64%);
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
+    text-align: justify;
+    padding: 10px;
+    width: 350px;
+    height: 240px;
+    box-shadow: 3px 3px 3px 3px hsla(210, 6%, 44%, 0.306);
+    margin-left: 10px;
+
 }
 .card-karma{
     grid-area: card-karma;
-    border-top: solid;
+    border-top: solid 10px;
     background-color:  hsl(0, 0%, 100%);
     border-top-color: hsl(34, 97%, 64%);
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
+    text-align: justify;
+    padding: 10px;
+    width: 350px;
+    height: 240px;
+    box-shadow: 3px 3px 3px 3px hsla(210, 6%, 44%, 0.306);
+    margin-top: 5px;
     
 }
 .attribution{
@@ -73,10 +116,43 @@ main{
 
 }
 .img-team-builder,.img-karma,.img-calculator,.img-supervisor{
-    align-self: end;
-    justify-self: end;
+    flex-flow: column nowrap;
+    align-self: flex-end;
+    margin-top: auto;
     height: 60px;
     width: 60px;
+    
+    
+}
+p{
+    color:  hsl(212, 6%, 44%);
+    font-family:poppins ;
+    font-weight: 400;
+}
+h1{
+   color:  hsl(212, 6%, 44%);
+   font-weight: 200;
+   font-family:poppins ;
+
+}
+h2{
+    color: hsl(234, 12%, 34%);
+    font-family:poppins ;
+    font-weight: 600;
+}
+.emphasis{
+    color: hsl(234, 12%, 34%);
+    font-family:poppins ;
+    font-weight: 600;
+}
+.attribution{
+   font-family: poppins;
+   color: hsl(212, 6%, 44%);
+
+}
+a{
+    text-decoration: none;
+    color: hsl(234, 12%, 34%);
 }
 
 
