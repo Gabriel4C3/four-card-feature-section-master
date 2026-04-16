@@ -39,6 +39,7 @@ main{
     gap: 20px;
     justify-items: center;
     align-items: center;
+    margin-top: 95px;
     
 }
 .card-team-builder{
@@ -146,14 +147,39 @@ h2{
     font-weight: 600;
 }
 .attribution{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center;
    font-family: poppins;
    color: hsl(212, 6%, 44%);
 
 }
 a{
+    text-align: justify;
     text-decoration: none;
     color: hsl(234, 12%, 34%);
 }
+@media screen and (max-width:700px) {
+    .container{
+        margin-top: 20px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "card-supervisor"
+        "card-team-builder"
+        "card-karma"
+        "card-calculator"
+        ;
+        width: 100%;
+        padding: 10px;
+        margin-top: 60px;
+        
 
+    }
 
-
+    
+    
+}
